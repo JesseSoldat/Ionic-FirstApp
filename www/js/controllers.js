@@ -29,9 +29,14 @@ angular.module('starter.controllers', [])
 
 
 .controller('CharactersCtrl', function($scope, $http, $state){
+
   $http.get('js/data.json').success(function(data){
-    console.log(data);
+    // console.log(data);
     $scope.characters = data;
   });
+
+
+  $scope.data = { showDelete: false, showReorder: false};
+
 
 });

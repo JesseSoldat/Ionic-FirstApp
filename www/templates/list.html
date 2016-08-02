@@ -1,5 +1,21 @@
 <ion-view view-title="Characters List">
 
+<ion-nav-buttons side="primary">
+	<button
+		class="button button-icon ion-minus-circled"
+		ng-click="data.showDelete = !data.showDelete; data.showReorder = false;" >
+	</button>
+</ion-nav-buttons>
+
+<ion-nav-buttons side="secondary">
+	<button
+		class="button button-icon ion-navicon"
+		ng-click="data.showReorder = !data.showReorder; data.showDelete = false;"
+		>
+		
+	</button>
+</ion-nav-buttons>
+
 <div class="bar bar-subheader item-input-inset bar-light">
 <label class="item-input-wrapper">
     <i class="icon ion-search placeholder-icon"></i>
@@ -9,7 +25,7 @@
 
 <ion-content class="has-subheader">
 <ion-list>
-	<ion-item ng-repeat="char in characters">
+	<ion-item ng-repeat="char in characters | filter: query">
 		<img class="charImg" ng-src="{{char.img}}">
 		<h2>{{char.name}}</h2>
 		<h2>{{char.bio}}</h2>

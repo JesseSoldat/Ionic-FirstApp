@@ -84,6 +84,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     views: {
       'tab-characters': {
         templateUrl: 'templates/list.html',
+        controller: 'CharactersCtrl'
         
       }
     }

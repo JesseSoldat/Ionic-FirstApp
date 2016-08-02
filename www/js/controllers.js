@@ -28,6 +28,10 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('CharactersCtrl', function($scope){
+.controller('CharactersCtrl', function($scope, $http, $state){
+  $http.get('js/data.json').success(function(data){
+    console.log(data);
+    $scope.characters = data;
+  });
 
 });

@@ -2,3 +2,7 @@
 .charImg {
 	width: 30%;
 }
+
+.star>.item-content {
+  background-color: #EEE8D6 !important;
+}

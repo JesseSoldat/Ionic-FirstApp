@@ -24,12 +24,23 @@
 <ion-content class="has-subheader">
 <ion-list show-delete="data.showDelete"
     show-reorder="data.showReorder">
-	<ion-item ng-repeat="char in characters | filter: query"  >
+	<ion-item ng-class="{'star': char.star}"
+		ng-repeat="char in characters | filter: query"
+		class="item-thumbnail-left item-icon-right
+		item-text-wrap"
+		  >
 		<img class="charImg" ng-src="{{char.img}}">
 		<h2>{{char.name}}</h2>
 		<h2>{{char.bio}}</h2>
 
-	
+		<button class="button button-clear icon ion-star button-assertive"
+        ng-click="toggleStar(char)"
+        ng-show="char.star"></button>
+      <ion-option-button class="button-dark"
+        ng-click="toggleStar(char)">
+        <i class="icon ion-star"></i>
+      </ion-option-button>
+
 		<ion-delete-button class="ion-minus-circled" ng-click="onItemDelete(char)">
       	</ion-delete-button>
 		

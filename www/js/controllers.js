@@ -35,9 +35,11 @@ angular.module('starter.controllers', [])
     $scope.characters = data;
   });
 
+
+
   $scope.onItemDelete = function(char){
     $scope.characters.splice($scope.characters.indexOf(char), 1);
-  }
+  };
 
   $scope.moveItem = function(char, fromIndex, toIndex){
       $scope.characters.splice(fromIndex, 1);
@@ -45,6 +47,11 @@ angular.module('starter.controllers', [])
   };
 
   $scope.data = { showDelete: false, showReorder: false};
+
+  $scope.toggleStar = function(char){
+    char.star = !char.star;
+  };
+
 
 
 });

@@ -35,6 +35,9 @@ angular.module('starter.controllers', [])
     $scope.characters = data;
   });
 
+  $scope.moveItem = function(item, fromIndex, toIndex){
+
+  };
 
   $scope.data = { showDelete: false, showReorder: false};
 

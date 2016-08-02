@@ -35,8 +35,13 @@ angular.module('starter.controllers', [])
     $scope.characters = data;
   });
 
-  $scope.moveItem = function(item, fromIndex, toIndex){
+  $scope.onItemDelete = function(char){
+    $scope.characters.splice($scope.characters.indexOf(char), 1);
+  }
 
+  $scope.moveItem = function(char, fromIndex, toIndex){
+      $scope.characters.splice(fromIndex, 1);
+      $scope.characters.splice(toIndex, 0, char);
   };
 
   $scope.data = { showDelete: false, showReorder: false};

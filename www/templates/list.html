@@ -30,8 +30,7 @@
     show-reorder="data.showReorder">
 	<ion-item ng-class="{'star': char.star}"
 		ng-repeat="char in characters | filter: query"
-		class="item-thumbnail-left item-icon-right
-		item-text-wrap"
+		class="item-thumbnail-left item-icon-right"
 		 href="#/tab/characters/{{char.id}}">
 		 
 		<img class="charImg" ng-src="{{char.img}}">

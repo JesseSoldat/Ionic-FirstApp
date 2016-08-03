@@ -3,6 +3,18 @@
 	width: 30%;
 }
 
+.detailImg {
+	width: 100%;
+}
+
 .star>.item-content {
   background-color: #EEE8D6 !important;
+}
+
+.splash {
+  background: url(../img/gamethrones.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

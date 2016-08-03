@@ -21,12 +21,6 @@ angular.module('starter.controllers', [])
   $scope.chat = Chats.get($stateParams.chatId);
 })
 
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
-})
-
 
 .controller('CharactersCtrl', function($scope, $http, $stateParams){
 
@@ -36,7 +30,7 @@ angular.module('starter.controllers', [])
   });
 
   $scope.charId = $stateParams.id;
-  
+
 
   $scope.onItemDelete = function(char){
     $scope.characters.splice($scope.characters.indexOf(char), 1);

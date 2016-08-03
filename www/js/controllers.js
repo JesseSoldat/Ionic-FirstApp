@@ -52,6 +52,13 @@ angular.module('starter.controllers', [])
     char.star = !char.star;
   };
 
+  $scope.doRefresh = function(){
+    $http.get('js/data.json').success(function(data){
+      $scope.characters = data;
+      $scope.$broadcast('scroll.refreshComplete');
+    });
+  }
+
 
 
 });

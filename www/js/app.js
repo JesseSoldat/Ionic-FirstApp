@@ -88,6 +88,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         
       }
     }
+  })
+
+  .state('tabs.detail', {
+    url: '/list/:id',
+    views: {
+      'list-tab': {
+        templateUrl: 'templates/details.html',
+        controller: 'CharactersCtrl'
+      }
+    }
   });
 
   // if none of the above states are matched, use this as the fallback

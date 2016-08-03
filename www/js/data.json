@@ -2,30 +2,38 @@
     {
       "bio": "Nakedly ambitious, Littlefinger left the Small Council to marry Lysa Arryn and secure the Vale to the Lannister's side. Beyond his official duties, he is the eyes and ears of King's Landing along with Varys.",
       "name": "Petyr Baelish",
+      "id": "01",
       "img": "http://i.lv3.hbo.com/assets/images/series/game-of-thrones/character/s5/petyr-baelish-512x512.jpg"
+
       
     },{
       "bio": "Brienne is a highborn lady who would rather be a knight. As Catelyn Stark's envoy, she escorted Jaime Lannister back to Kings Landing. The two fighters developed a mutual respect for each other during their journey.",
       "name": "Brienne",
+      "id": "02",
       "img": "http://i.lv3.hbo.com/assets/images/series/game-of-thrones/character/s5/brienne-of-tarth-512x512.jpg"
     },{
       "bio": "A mercenary, Bronn joined up with Tyrion Lannister in return for a rich reward. Bronn was knighted for his bravery during the Battle of the Blackwater.",
       "name": "Bronn",
+      "id": "03",
       "img": "http://i.lv3.hbo.com/assets/images/series/game-of-thrones/character/s5/bronn-512x512.jpg"
     },{
       "bio": "A former ward of House Stark, Theon was quick to join his close friend Robb in his rebellion against King Joffrey. But upon returning to Pyke as Robb's envoy, Theon betrayed the family that raised him. He seized Winterfell, but was taken prisoner by Ramsay Snow, who tortured him into renouncing his true identity. ",
+      "id": "04",
       "name": "Theon Greyjoy",
       "img": "http://i.lv3.hbo.com/assets/images/series/game-of-thrones/character/s5/theon-greyjoy-512x512.jpg"
     },{
       "bio": "Jaqen helped Arya escape from Harrenhal and provided her with an iron coin to ensure her safe passage to Braavos.",
       "name": "Jaqen H’ghar",
+      "id": "05",
       "img": "http://i.lv3.hbo.com/assets/images/series/game-of-thrones/character/s5/jaqen-hghar-512x512.jpg"
     },{
       "bio": "Cersei's twin brother and the Lord Commander of the Kingsguard, it was he who slew the Mad King in violation of his oath to protect the royal family. After Jaime was captured by Catelyn Stark, Brienne of Tarth escorted him back to King's Landing. Jaime lost his sword hand to Roose Bolton's henchman, Locke, along the way.",
       "name": "Jaime Lannister",
+      "id": "06",
       "img": "http://i.lv3.hbo.com/assets/images/series/game-of-thrones/character/s5/jamie-lannister-512x512.jpg"
     },{
       "bio": "What Tyrion lacks in size and strength, he makes up for in mental acuity. Formerly Hand of the King and Master of Coin on the Small Council, Tyrion has now made his way to Meereen.",
+      "id": "07",
       "name": "Tyrion Lannister",
       "img": "http://i.lv3.hbo.com/assets/images/series/game-of-thrones/character/s5/tyrion-lannister-512x512.jpg"
     }

@@ -32,7 +32,8 @@
 		ng-repeat="char in characters | filter: query"
 		class="item-thumbnail-left item-icon-right
 		item-text-wrap"
-		  >
+		 href="#/tab/characters/{{char.id}}">
+		 
 		<img class="charImg" ng-src="{{char.img}}">
 		<h2>{{char.name}}</h2>
 		<h2>{{char.bio}}</h2>

@@ -1,0 +1,13 @@
+<ion-view>
+
+	<ion-content>
+		<ion-list class="list-inset">
+			<ion-item class="item-text-wrap"
+			ng-repeat="char in characters | filter: { id : charId}">
+			<img ng-src="{{char.img}}">
+			<h2>{{ char.name }}</h2>
+			<h2>{{char.bio}}</h2>
+		</ion-item>
+	</ion-list>
+</ion-content>
+</ion-view>

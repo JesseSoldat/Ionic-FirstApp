@@ -28,14 +28,15 @@ angular.module('starter.controllers', [])
 })
 
 
-.controller('CharactersCtrl', function($scope, $http, $state){
+.controller('CharactersCtrl', function($scope, $http, $stateParams){
 
   $http.get('js/data.json').success(function(data){
     // console.log(data);
     $scope.characters = data;
   });
 
-
+  $scope.charId = $stateParams.id;
+  
 
   $scope.onItemDelete = function(char){
     $scope.characters.splice($scope.characters.indexOf(char), 1);
@@ -57,7 +58,10 @@ angular.module('starter.controllers', [])
       $scope.characters = data;
       $scope.$broadcast('scroll.refreshComplete');
     });
-  }
+  };
+
+ 
+
 
 
 

@@ -69,6 +69,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
+
   .state('tab.account', {
     url: '/account',
     views: {
@@ -90,10 +91,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tabs.detail', {
-    url: '/list/:id',
+  .state('tab.detail', {
+    url: '/characters/:id',
     views: {
-      'list-tab': {
+      'tab-characters': {
         templateUrl: 'templates/details.html',
         controller: 'CharactersCtrl'
       }
